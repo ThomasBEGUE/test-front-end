@@ -70,8 +70,7 @@ function NavigationBar ()
     const titles = ["Acceuil", "Contact"];
     const languages = [
         {id: 1, name: "Francais", code: "fr_FR", selected: true},
-        {id: 2, name: "Anglais", code: "en_GB", selected: false},
-        {id: 3, name: "Espagnol", code: "es_ES", selected: false}
+        {id: 2, name: "Anglais", code: "en_GB", selected: false}
     ]
     return (
         <nav className="navbar navbar-expand navbar-light bg-light">
