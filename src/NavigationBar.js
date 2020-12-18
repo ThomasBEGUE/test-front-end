@@ -67,7 +67,7 @@ function ListLanguage(props)
 
 function NavigationBar ()
 {
-    const titles = ["Acceuil", "Contact"];
+    const titles = ["Accueil", "Contact"];
     const languages = [
         {id: 1, name: "Francais", code: "fr_FR", selected: true},
         {id: 2, name: "Anglais", code: "en_GB", selected: false}

@@ -1,8 +1,8 @@
 
-function AppContainer ()
+function AppContainer (props)
 {
     return (
-        <p>lol</p>
+        <h1>{props.title}</h1>
     );
 }
 

@@ -4,14 +4,16 @@ import './App.css';
 import NavigationBar from './NavigationBar.js';
 import AppContainer from './AppContainer.js';
 
-function App() {
+function App(props) {
+
+  const title = props.title ? props.title :  '';
   return (
     <React.Fragment>
       <header>
         <NavigationBar />
       </header>
       <div className="container flex">
-        <AppContainer />
+        <AppContainer title={title} />
       </div>
     </React.Fragment>
   );
