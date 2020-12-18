@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
-import NavigationBar from './NavigationBar.js';
-import AppContainer from './AppContainer.js';
+import NavigationBar from './NavigationBar';
+import AppContainer from './AppContainer';
 
-function App(props) {
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Error from './components/Error';
 
-  const title = props.title ? props.title :  '';
+function App() {
+
   return (
     <React.Fragment>
-      <header>
-        <NavigationBar />
-      </header>
-      <div className="container flex">
-        <AppContainer title={title} />
-      </div>
+      <BrowserRouter>
+        <header>
+          <NavigationBar />
+        </header>
+        <div className="container flex mt-4">
+          <Switch>
+            <Route path="/" component={Home} exact/>
+            <Route path="/contact" component={Contact}/>
+            <Route component={Error}/>
+          </Switch>
+        </div>
+      </BrowserRouter>
     </React.Fragment>
   );
 }

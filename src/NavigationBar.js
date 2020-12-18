@@ -1,8 +1,11 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom'
+
 function ListItem(props)
 {
     return (
         <li className="nav-item">
-            <a className="nav-link" href="#">{props.value}</a>
+            <NavLink className="nav-link" to={props.link}>{props.name}</NavLink>
         </li>
     );
 }
@@ -11,7 +14,7 @@ function ListLinks(props)
 {
     const titles = props.titles;
     const listItems = titles.map((title) =>
-        <ListItem key={title.toString()} value={title} />
+        <ListItem key={title.name.toString()} name={title.name} link={title.link}/>
     );
 
     return (
@@ -67,7 +70,10 @@ function ListLanguage(props)
 
 function NavigationBar ()
 {
-    const titles = ["Accueil", "Contact"];
+    const titles = [
+        {id: 1, name:"Accueil", link:"/"},
+        {id: 2, name:"Contact", link:"/contact"}
+    ];
     const languages = [
         {id: 1, name: "Francais", code: "fr_FR", selected: true},
         {id: 2, name: "Anglais", code: "en_GB", selected: false}

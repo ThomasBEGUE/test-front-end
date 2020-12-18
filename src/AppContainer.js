@@ -1,8 +1,8 @@
 
-function AppContainer (props)
+function AppContainer ()
 {
     return (
-        <h1>{props.title}</h1>
+        <h1>ezeae</h1>
     );
 }
 
