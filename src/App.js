@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
 import NavigationBar from './NavigationBar';
-import AppContainer from './AppContainer';
 
 import Home from './components/Home';
 import Contact from './components/Contact';
