@@ -5,12 +5,13 @@ const Contact = () => {
        <div>
           <h1>Contact</h1>
            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at rutrum odio. 
-            Nulla luctus risus enim, at ullamcorper orci commodo nec. Nulla pretium risus in iaculis consequat. 
-            Curabitur accumsan tellus est, sit amet elementum ante posuere at. Sed vitae metus tempus, porta velit vitae, gravida purus. 
-            Suspendisse sit amet odio et mauris convallis porttitor. Sed sed eleifend ex. Nullam semper elementum tortor tincidunt tincidunt. 
-            Praesent consequat scelerisque erat et imperdiet. Donec semper, nisl non tempus pulvinar, orci erat mollis risus, sed maximus odio eros nec nulla. 
-            Phasellus nunc enim, congue in ultrices nec, tincidunt eu nisl. Donec blandit cursus pellentesque. Nam tristique tellus iaculis volutpat elementum. 
+            Nullam euismod risus in ligula dictum efficitur. Donec ornare mi ac diam rhoncus efficitur. 
+            Donec sagittis est eget mauris tristique porttitor. Cras ultrices tristique lorem, at aliquet nisi ullamcorper ut.
+            Aliquam eu urna vitae ligula fringilla elementum. Nullam feugiat vestibulum sem ac vehicula. Proin tincidunt tellus vel iaculis aliquet.
+            Aenean turpis lectus, vestibulum in tellus eu, condimentum lobortis leo. Integer bibendum eros non ultricies tempor.
+            Fusce porta nunc sit amet gravida convallis. Vestibulum mattis tellus in scelerisque molestie. Mauris eros purus, feugiat sed libero sed, rhoncus ornare sem. 
+            Quisque quis euismod metus, luctus elementum est. Vestibulum molestie augue ac mauris sollicitudin, quis ultricies eros aliquam. 
+            Donec accumsan felis ac velit scelerisque aliquam. Sed molestie magna a quam cursus, at porta ante vestibulum.  
            </p>
        </div>
     );

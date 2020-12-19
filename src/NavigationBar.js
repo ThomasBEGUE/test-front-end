@@ -83,12 +83,20 @@ function NavigationBar ()
         <div className="container">
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ListLinks titles={titles} />
-            <ListLanguage languages={languages} />
+
+            <div class="input-group col-sm-3 col-md-3">
+                <select class="custom-select" id="inputGroupSelect03">
+                    <option value="fr_FR" selected>Français</option>
+                    <option value="en_GB">Anglais</option>
+                </select>
+            </div>
+
           </div>
         </div>
       </nav>
     );
 }
 
+//             <ListLanguage languages={languages} />
 
 export default NavigationBar;
