@@ -1,15 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import logo from './logo.svg';
-import './App.css';
-import NavigationBar from './NavigationBar';
 
+import NavigationBar from './features/language/NavigationBar';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Error from './components/Error';
 
 function App() {
-
   return (
     <React.Fragment>
       <BrowserRouter>
