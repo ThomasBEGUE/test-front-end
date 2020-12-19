@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
  
 const Error = () => {
-    return (
-       <div>
-          <p>Error: Page does not exist!</p>
-       </div>
-    );
+  
+   useEffect(() => {
+      document.title = 'Erreur';
+   })
+
+   return (
+      <div>
+         <p>Erreur: La page n'existe pas !</p>
+      </div>
+   );
 }
  
 export default Error;
